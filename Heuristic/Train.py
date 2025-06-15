@@ -512,98 +512,30 @@ def q_learning_optimize_weights():
 
 
 
-# def main(window):
-#     # Tối ưu hóa trọng số bằng Q-Learning
-#     optimal_weights = q_learning_optimize_weights()
-#     print("Optimal weights:", optimal_weights)
-    
-#     # Chạy trò chơi với trọng số tối ưu (tùy chọn)
-#     clock = pygame.time.Clock()
-#     tiles = generate_tile()
-#     run = True
-    
-#     while run:
-#         clock.tick(FPS)
-#         best_dir = best_move(tiles, optimal_weights)
-#         if best_dir:
-#             result = move_tiles(window, tiles, clock, best_dir)
-#         else:
-#             result = "lost"
-        
-#         if result == "lost":
-#             print("Game Over!")
-#             run = False
-        
-#         draw(window, tiles)
-    
-#     pygame.quit()
-
-# if __name__ == "__main__":
-#     main(WINDOW)
-
-
-###################################################################################
 def main(window):
+    # Tối ưu hóa trọng số bằng Q-Learning
+    optimal_weights = q_learning_optimize_weights()
+    print("Optimal weights:", optimal_weights)
+    
+    # Chạy trò chơi với trọng số tối ưu (tùy chọn)
     clock = pygame.time.Clock()
-    run = True
-
-    # tiles = generate_tile()
-    # while run:
-    #     clock.tick(FPS)
-    #     for event in pygame.event.get():
-    #         if event.type == pygame.QUIT:
-    #             run = False
-    #             break
-    #         if event.type == pygame.KEYDOWN:
-    #             if event.key == pygame.K_LEFT:
-    #                 result = move_tiles(window, tiles, clock, "left")
-    #             elif event.key == pygame.K_RIGHT:
-    #                 result = move_tiles(window, tiles, clock, "right")
-    #             elif event.key == pygame.K_UP:
-    #                 result = move_tiles(window, tiles, clock, "up")
-    #             elif event.key == pygame.K_DOWN:
-    #                 result = move_tiles(window, tiles, clock, "down")
-                
-    #             if result == "lost":
-    #                 print("Game Over!")
-    #                 run = False
-    #                 break
-    #     draw(window, tiles)
     tiles = generate_tile()
     run = True
-    max_tile = 2  # Theo dõi ô lớn nhất
-
+    
     while run:
         clock.tick(FPS)
-        best_dir = best_move(tiles, {
-            'empty_tiles': 23300.0,
-            'distance_to_corner': 1200.0,
-            'merge_potential': 300.0,
-            'smoothness': 390.0,
-            'monotonicity': 480.0,
-            'big_tile_group': 1140.0,
-            'total_tile_value': 450.0
-        })
+        best_dir = best_move(tiles, optimal_weights)
         if best_dir:
             result = move_tiles(window, tiles, clock, best_dir)
         else:
             result = "lost"
         
-        # Cập nhật max_tile
-        if tiles:
-            current_max = max(tile.value for tile in tiles.values())
-            max_tile = max(max_tile, current_max)
-        
         if result == "lost":
+            print("Game Over!")
             run = False
         
         draw(window, tiles)
-    
-    # Phần thưởng kết hợp: 70% từ tổng giá trị các ô, 30% từ log2 của ô lớn nhất
-    total_value = sum(tile.value for tile in tiles.values()) if tiles else 0
-    max_value = max_tile if tiles else 0
-    reward = math.ceil(0.7 * total_value + 0.3 * math.log2(max_value) * 1000) if total_value > 0 and max_value > 0 else 0
-    print("Reward: ", reward, "MaxValue: ", max_value)
+
     
     pygame.quit()
 

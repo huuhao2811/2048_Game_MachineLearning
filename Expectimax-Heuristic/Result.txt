@@ -1,0 +1,70 @@
+    Starting optimization...
+    Generation 0: Best Fitness = 2048.00
+    Best Weights: [1267.77, 56.43, 403.93, 615.03, 1560.06, -75.48, 1532.83, -117.58]
+    Generation 1: Best Fitness = 2048.00
+    Best Weights: [1748.81, 755.37, 947.54, 88.67, 1567.8, 429.65, 461.8, 1318.42]
+    Generation 2: Best Fitness = 1024.00
+    Best Weights: [1072.46, 1946.23, 776.61, 1335.57, 1658.81, 1246.82, 1599.97, 1154.7]
+    Generation 3: Best Fitness = 2048.00
+    Best Weights: [1072.23, 2194.4, 767.85, 1082.69, 1644.13, 477.62, 1588.64, 1109.65]
+    Generation 4: Best Fitness = 2048.00
+    Best Weights: [1649.52, 1177.68, 544.22, 623.38, 1611.33, 369.38, 1479.7, 1265.72]
+    Optimal Weights: {'empty_tiles': 1649.518510816157, 'max_in_corner': 1177.6780128253265, 'merge_potential': 544.2238820760417, 'smoothness': 623.3759551162289, 'monotonicity': 1611.3259170473243, 'big_tile_group': 369.3780094790434, 'total_tile_value': 1479.7004675447477, 'high_value_merge': 1265.715873567634}
+    Reward:  4319
+    Max Value: 1024
+
+    GEN = 5
+    --------------------------------------------
+    Starting optimization...
+Generation 0: Best Fitness = 2048.00
+Best Weights: [1267.77, 56.43, 403.93, 615.03, 1560.06, -75.48, 1532.83, -117.58]
+Generation 1: Best Fitness = 2048.00
+Best Weights: [1748.81, 755.37, 947.54, 88.67, 1567.8, 429.65, 461.8, 1318.42]
+Generation 2: Best Fitness = 1024.00
+Best Weights: [1072.46, 1946.23, 776.61, 1335.57, 1658.81, 1246.82, 1599.97, 1154.7]
+Generation 3: Best Fitness = 2048.00
+Best Weights: [1072.23, 2194.4, 767.85, 1082.69, 1644.13, 477.62, 1588.64, 1109.65]
+Generation 4: Best Fitness = 2048.00
+Best Weights: [1649.52, 1177.68, 544.22, 623.38, 1611.33, 369.38, 1479.7, 1265.72]
+Generation 5: Best Fitness = 2048.00
+Best Weights: [1071.6, 1800.86, 819.03, 1875.83, 1570.91, 611.62, 1580.58, 1042.72]
+Generation 6: Best Fitness = 2048.00
+Best Weights: [575.75, 818.6, 777.89, 1092.57, 1528.46, 591.97, 1709.83, 949.55]
+Generation 7: Best Fitness = 2048.00
+Best Weights: [1898.4, 970.32, 426.26, 1164.5, 1668.24, 189.42, 1462.9, 1268.14]
+Generation 8: Best Fitness = 2048.00
+Best Weights: [1825.21, 956.37, 367.73, 1349.64, 1588.8, 137.18, 1468.81, 1269.12]
+Generation 9: Best Fitness = 2048.00
+Best Weights: [1769.76, 904.9, 685.76, 946.51, 1599.4, 511.98, 1623.51, 864.91]
+Generation 10: Best Fitness = 2048.00
+Best Weights: [777.8, 1013.52, 257.54, 1412.11, 1614.85, 725.23, 1611.79, 1100.79]
+Generation 11: Best Fitness = 2048.00
+Best Weights: [1828.43, 962.94, 796.6, 1423.17, 1594.48, 243.05, 1443.27, 1057.54]
+Generation 12: Best Fitness = 2048.00
+Best Weights: [1828.43, 962.94, 796.6, 1423.17, 1594.48, 243.05, 1443.27, 1057.54]
+Generation 13: Best Fitness = 2048.00
+Best Weights: [1463.45, 976.82, 161.94, 1159.94, 1620.03, 472.68, 1474.41, 899.96]
+Generation 14: Best Fitness = 2048.00
+Best Weights: [1828.43, 962.94, 796.6, 1434.7, 1594.48, 243.05, 1443.27, 1057.54]
+Generation 15: Best Fitness = 2048.00
+Best Weights: [1726.14, 959.27, 212.68, 915.14, 1599.47, 235.02, 1445.93, 1167.76]
+Generation 16: Best Fitness = 2048.00
+Best Weights: [2809.38, 960.31, 820.77, 1332.15, 1589.37, 644.42, 1412.13, 1440.7]
+Generation 17: Best Fitness = 2048.00
+Best Weights: [-304.95, 988.57, -61.31, 1522.22, 1605.35, 216.78, 1570.0, 852.16]
+Generation 18: Best Fitness = 1024.00
+Best Weights: [4190.9, 981.68, 699.27, 1282.34, 1601.03, 472.8, 1550.61, 1194.98]
+Generation 19: Best Fitness = 2048.00
+Best Weights: [537.45, 959.23, 810.69, 1261.9, 1640.08, 285.07, 1642.1, 909.6]
+Optimal Weights: {'empty_tiles': 537.4542494459174, 'max_in_corner': 959.2308181914565, 'merge_potential': 810.6879021182804, 
+'smoothness': 1261.902509904945, 'monotonicity': 1640.0810210208008, 'big_tile_group': 285.07012676558884,
+ 'total_tile_value': 1642.0989852437706, 'high_value_merge': 909.5970981704978}
+Reward:  4314
+Max Value: 1024
+
+
+
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Reward: 6182 MaxValue: 2048
+
+
